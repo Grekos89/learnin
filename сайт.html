@@ -1,0 +1,95 @@
+<div class="container">
+  <div class="top-menu">
+     <div class="top-menu-placeholder"></div>
+     <div class="top-menu-center">Centr in menu</div>
+     <div class="top-menu-right">Right in menu</div>
+  </div>
+  <div class="main">
+   <div class="Left-menu">Left menu</div>
+   <div class="main-chat">
+    <div class="chat-top-menu">Top menu</div>
+    <div class="chat">Chat</div>
+    <div class="message">
+        <input class="message-input"/>
+        <button class="send-button">Send</button>
+    </div>
+   </div>
+  </div>
+</div>
+
+<style>
+body {
+   margin: 0;
+}
+
+
+.container {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+.top-menu { 
+   display: flex;
+   background-color: #eeeeee;
+   color: #361abf;
+   padding: 20px;
+   padding-bottom: 10px;
+   padding-top: 30px;
+}
+
+.top-menu-placeholder {
+   margin-right: auto;
+}
+
+.top-menu-right {
+   margin-left: auto;
+}
+
+.main {
+   flex: 1 1 0;
+   display: flex;
+}
+
+.left-menu {
+   flex: 0 0 300px;
+   background-color: #eeeeee;
+}
+
+.main-chat {
+   display: flex;
+   flex-direction: column;
+   flex: 1 1 0;
+   background-color: #888888;
+}
+
+.chat-top-menu {
+   flex: 0 0 50px;
+}
+
+.chat {
+   flex: 1 1 0;
+}
+
+.message {
+   display: flex;
+   flex: 0 0 100px;
+}
+
+.message-input {
+   flex: 1 1 0;
+}
+
+.send-button {
+   flex: 0 0 100px;
+}
+
+
+</style>
+
+
+
+
+
+
+
+
